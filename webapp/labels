@@ -4,7 +4,7 @@ traefik.enable=true
 # point to web if no SSL certificates and to websecure if yes
 traefik.http.routers.nginx.entrypoints=web,websecure
 # Add Hostname so traefik can direct from
-traefik.http.routers.nginx.rule=Host('ubuntu.vives.live')
+traefik.http.routers.nginx.rule=Host(`subdomain.vives.be`)
 # Add TLS label for SSL certificates
 traefik.http.routers.nginx.tls=true 
 # Label to obtain SSL cert (production or staging)
