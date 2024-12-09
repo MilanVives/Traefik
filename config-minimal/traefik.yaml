@@ -1,3 +1,7 @@
+api:
+  dashboard: true
+  insecure: true
+
 entryPoints:
   web:
     address: ":80"
@@ -7,7 +11,7 @@ entryPoints:
 certificatesResolvers:
   myresolver:
     acme:
-      email: your-email@example.com
+      email: milan.dima@vives.be #Change email address to your address
       storage: acme.json
       httpChallenge:
         entryPoint: web
