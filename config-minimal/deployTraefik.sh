@@ -21,7 +21,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 #Install NVIM Optional
 git clone https://github.com/MilanVives/nvim
 ./nvim/install/install-ubuntu.sh
-source ~/.bashrc
+#source ~/.bashrc
 
 #Create Docker network
 docker network create traefik
@@ -29,3 +29,5 @@ docker network create traefik
 #Add acme.json file for certs and change permissions
 touch acme.json
 chmod 600 acme.json
+
+# docker compose up -d
