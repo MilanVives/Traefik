@@ -29,5 +29,5 @@ docker network create traefik
 #Add acme.json file for certs and change permissions
 touch acme.json
 chmod 600 acme.json
-
+rm ~/nvim-linux64.tar.gz
 # docker compose up -d
